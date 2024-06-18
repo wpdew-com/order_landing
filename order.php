@@ -1,6 +1,6 @@
 <?php
 session_start();
-date_default_timezone_set('Europe/Kiev');
+date_default_timezone_set('Europe/Kiev'); 
 
 $spamip = array(
 	'134.249.248.30',
