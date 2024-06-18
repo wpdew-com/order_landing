@@ -45,7 +45,8 @@ Include this script in your order processing form handler. The script will:
 3. Send order data to Telegram, configured CRMs, and via email.
 
 ### Example Form
-```
+
+```html
 <form action="order.php" method="post">
 	<h3 class="mb-3">Заповніть, будь ласка, форму нижче</h3>
 	<input class="form-control form-control-lg" type="text" placeholder="Ваше ім'я" name="name" required="">
