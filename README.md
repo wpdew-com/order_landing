@@ -46,7 +46,7 @@ Include this script in your order processing form handler. The script will:
 
 ### Example Form
 
-```html
+```php
 <?php
 $price_old = '1598';
 $price_new = '799';
