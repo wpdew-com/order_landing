@@ -47,6 +47,18 @@ Include this script in your order processing form handler. The script will:
 ### Example Form
 
 ```html
+<?php
+$price_old = '1598';
+$price_new = '799';
+$discount = round((($price_old - $price_new) / $price_old) * 100);
+$price_new2 = round($price_new - ($price_new*0.05)); // -5%
+$price_new3 = round($price_new - ($price_new*0.1)); // -10%
+$price_new4 = round($price_new - ($price_new*0.15)); // -15%
+
+$product_id = '5';
+$fbp = (isset($_GET['fbp'])) ? trim($_GET['fbp']) : '';
+$_SESSION['fbp'] = $fbp;
+?>
 <form action="order.php" method="post">
 	<h3 class="mb-3">Заповніть, будь ласка, форму нижче</h3>
 	<input class="form-control form-control-lg" type="text" placeholder="Ваше ім'я" name="name" required="">
@@ -73,6 +85,17 @@ Include this script in your order processing form handler. The script will:
     	<a href="politics.html" target="_blank">політикою конфіденційності</a>
     </span>
 </form>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script>
+$('select[name="comment"]').on('change', function() {
+	var count = $(this).find('option:selected').data('count');
+	var prise = $(this).find('option:selected').data('prise');
+	var product_id = $(this).find('option:selected').data('productid');
+	$('input[name="count"]').val(count);
+	$('input[name="product_price"]').val(prise);
+	$('input[name="product_id"]').val(product_id);
+});
+</script>
 ```
 
 ## Code Overview
