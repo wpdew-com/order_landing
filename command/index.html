@@ -458,6 +458,15 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
+  <a href="#upsell_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Рекомендація по роботі з системою UPSELL
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#upsell-crm" class="md-nav__link">
     <span class="md-ellipsis">
       Підключення UPSELL та відправка даних в CRM
@@ -467,7 +476,7 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#upsell_1" class="md-nav__link">
+  <a href="#upsell_2" class="md-nav__link">
     <span class="md-ellipsis">
       Параметри форми UPSELL
     </span>
@@ -614,6 +623,15 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
+  <a href="#upsell_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Рекомендація по роботі з системою UPSELL
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#upsell-crm" class="md-nav__link">
     <span class="md-ellipsis">
       Підключення UPSELL та відправка даних в CRM
@@ -623,7 +641,7 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#upsell_1" class="md-nav__link">
+  <a href="#upsell_2" class="md-nav__link">
     <span class="md-ellipsis">
       Параметри форми UPSELL
     </span>
@@ -901,6 +919,15 @@ iframe {
 <h2 id="upsell">UPSELL<a class="headerlink" href="#upsell" title="Permanent link">¶</a></h2>
 <p>Система UPSELL дозволяє вам пропонувати покупцю додаткові товари або послуги під час оформлення замовлення. Це допомагає збільшити середній чек і прибуток від кожного замовлення.</p>
 <p>Загальні параметри для використання системи UPSELL майже такі само як і для звичайного лендінгу, але параметри форми трошкі відрізняються.</p>
+<h3 id="upsell_1">Рекомендація по роботі з системою UPSELL<a class="headerlink" href="#upsell_1" title="Permanent link">¶</a></h3>
+<ul>
+<li>Встановлюємо "материнський UPSELL" в папку upsellsystem.</li>
+<li>Налаштування всіх параметрів в "материнський UPSELL".</li>
+<li>Вимикаємо товари в "материнському UPSELL".</li>
+<li>Встановлюємо "дочірній UPSELL" в папку з лендінгом.</li>
+<li>Включаємо товари в "дочірньому UPSELL".</li>
+<li>Встановлюємо параметри форми в "дочірньому UPSELL".</li>
+</ul>
 <h3 id="upsell-crm">Підключення UPSELL та відправка даних в CRM<a class="headerlink" href="#upsell-crm" title="Permanent link">¶</a></h3>
 <div class="highlight"><pre><span></span><code><span class="cp">&lt;?php</span> <span class="k">require_once</span> <span class="s1">'upsell/include/lib/upsell_config.php'</span><span class="p">;</span> <span class="cp">?&gt;</span>
 </code></pre></div>
@@ -908,7 +935,7 @@ iframe {
 <div class="highlight"><pre><span></span><code><span class="cp">&lt;?php</span> <span class="k">require_once</span> <span class="s1">'upsell/include/lib/upsell_config_footer.php'</span><span class="p">;</span> <span class="cp">?&gt;</span>
 </code></pre></div>
 <p>Підключення конфігураційного файлу системи UPSELL в кінці документу для захисту ваших сторінок.</p>
-<h3 id="upsell_1">Параметри форми UPSELL<a class="headerlink" href="#upsell_1" title="Permanent link">¶</a></h3>
+<h3 id="upsell_2">Параметри форми UPSELL<a class="headerlink" href="#upsell_2" title="Permanent link">¶</a></h3>
 <p>Відрізняються тільки адресою відправки даних. </p>
 <p>Метод відправки POST. та дії на скрипт обробки замовлення <code>action="upsell/index.php"</code></p>
 <div class="highlight"><pre><span></span><code><span class="x">&lt;form action="upsell/index.php" method="post"&gt;</span>
