@@ -11,7 +11,7 @@ $price_new4 = round($price_new - ($price_new*0.15)); // -15%
 
 $product_id = '5';
 $fbp = (isset($_GET['fbp'])) ? trim($_GET['fbp']) : '';
-$_SESSION['fbp'] = $fbp;
+$_SESSION['fbp'] = $fbp; 
 ?>
 <head>
 	<meta charset="utf-8">
