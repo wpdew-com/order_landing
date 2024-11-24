@@ -146,7 +146,7 @@ $_SESSION['fbp'] = $fbp;
 
 			$('input[name=product_id]').val(product_id);
 			$('input[name=product_price]').val(product_price);
-			$('input[name=product_name]').val(product_name);
+			$('input[name=product]').val(product_name);
 		});
 		$('select[name="comment"]').on('change', function() {
 			var count = $(this).find('option:selected').data('count');
